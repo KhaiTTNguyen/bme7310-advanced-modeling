@@ -1,6 +1,6 @@
-% plot_equations(0.1, 2, 3, 20, 1);
-% plot_equations(0.5, 10, 3, 20, 2);
-% plot_equations(0.75, 15, 3, 20, 3);
+plot_equations(0.1, 2, 3, 20, 1);
+plot_equations(0.5, 10, 3, 20, 2);
+plot_equations(0.75, 15, 3, 20, 3);
 
 plot_equations_with_error_norm(0.2, 2, 3, 10);
 plot_equations_with_error_norm(0.1, 2, 3, 20);
