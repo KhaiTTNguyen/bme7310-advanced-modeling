@@ -1,6 +1,6 @@
 % ---------------- 2-D FDM with Jacobi ----------------
 figure(1); subplot(1,2,1);subplot(1,2,2);
-Tol=1e-6;
+Tol=1e-5;
 x=0:.05:1;
 n = length(x);
 h=0.05;
@@ -37,10 +37,11 @@ while Err>Tol
   end
 end
 title(['# of Iterations ' num2str(itr)]);
-
-
+%%
+index_x_V = find(x==0.7);
+fprintf(' V(x==0.7, x==0.7): %.12f\n', V(index_x_V, index_x_V))
 % --------------- Gauss Seidel --------------- 
-
+%%
 x=0:.05:1;
 n = length(x);
 h=0.05;
@@ -79,3 +80,6 @@ while Err>Tol
   end
 end
 title(['# of Iterations ' num2str(itr)]);
+%%
+index_x_V = find(x==0.7);
+fprintf(' V(x==0.7, x==0.7): %.12f\n', V(index_x_V, index_x_V))
